@@ -1,7 +1,6 @@
 #include <stdio.h>
-
 /**
- * main - entry point prints string character
+ * main - prints string character
  *
  * Return : Always 0 (success)
  */

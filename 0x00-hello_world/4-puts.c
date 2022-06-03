@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  *main - enty point
  *
  *Return: always 0 (success)

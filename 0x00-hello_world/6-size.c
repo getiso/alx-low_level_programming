@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Return: Always 0 (Success)
- * */
+ */
 int main(void)
 {
 	char a;
@@ -19,3 +19,4 @@ int main(void)
 	printf("size of long long int: %lu bytes\n", (unsigned long)sizeof(d));
 	printf("size of float: %lu bytes\n", (unsigned long)sizeof(f));
 	return (0);
+}

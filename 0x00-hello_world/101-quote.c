@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <unistd.h>
 /*
- * main - Entry point
+ * main - with out printf or puts
  *
- * Return: Always 0 (Success)
+ * Return: Always 1 (Success)
  */
 int main(void)
 {

@@ -3,8 +3,8 @@
 #include <time.h>
 
 /*
- * main - Entry point
- *print lower alphabet
+ * main - Entry point print lower alphabet
+ *
  * Return: Always 0 (Success)
  */
 

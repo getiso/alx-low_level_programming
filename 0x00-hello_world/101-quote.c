@@ -2,7 +2,7 @@
 #include <unistd.h>
 /*
  * main - Entry point
- * Retur: always 1 (Success)
+ * Retur: Always 1 (Success)
  */
 int main(void)
 {

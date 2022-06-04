@@ -1,8 +1,6 @@
 #include <stdio.h>
-
 /**
  * main - size of data type
- *
  * Return: Always 0 (Success)
  */
 int main(void)

@@ -3,8 +3,7 @@
 #include <time.h>
 
 /*
- * main - main block
- *Description: Use 'putchar' function to print the alphabet lowercase.
+ * main - writ program that print the alphabet in lowercase
  * Return: 0
  */
 

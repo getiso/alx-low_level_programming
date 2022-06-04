@@ -4,13 +4,14 @@
 
 /*
  * main - Entry point
- *
+ *print lower alphabet
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
 	char lower;
+
 	for (lower = 'a'; lower <= 'z'; lower++)
 	{
 		putchar(lower);

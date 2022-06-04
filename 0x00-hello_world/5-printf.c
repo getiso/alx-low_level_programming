@@ -3,6 +3,7 @@
  * main - entry point
  * prints string character using printf
  * Return : Always 0 (success)
+ * the program return 0
  */
 int main(void)
 {

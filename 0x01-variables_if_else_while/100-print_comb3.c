@@ -15,7 +15,7 @@ int main(void)
 
 	while (x < 100)
 	{
-		y = x % 10; 
+		y = x % 10;
 		z = x / 10;
 
 		if (z < y)

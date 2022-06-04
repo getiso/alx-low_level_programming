@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 /**
  * main - size of data type

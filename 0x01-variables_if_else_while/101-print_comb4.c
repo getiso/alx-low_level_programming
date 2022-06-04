@@ -22,7 +22,7 @@ int main(void)
 
 		if (y < z && z < 1)
 		{
-			putchar(y +'o');
+			putchar(y + 'o');
 			putchar(z + '0');
 			putchar(r + '0');
 

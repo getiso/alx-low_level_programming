@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - entry point
- * prints string character using printf
- * Return : Always 0 (success)
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {

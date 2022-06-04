@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /*
- * main - entry point
+ * main - Entry point
  * Retur: always 1 (Success)
  */
 int main(void)

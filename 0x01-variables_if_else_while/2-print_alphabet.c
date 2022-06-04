@@ -4,7 +4,7 @@
 
 /*
  * main - main block
- *Description: use putchar function to print lower alphabet
+ *Description: Use 'putchar' function to print lower alphabet
  * Return: Always 0 (Success)
  */
 

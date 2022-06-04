@@ -2,8 +2,8 @@
 
 /**
  * main - main block
- * Description: Print all possible combination of 3 digits
- * Use only 'putchar' 6 times
+ * Description: Print all possible combination of 3 digit number
+ * Use only 'putchar' 6 times only
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -12,14 +12,14 @@ int main(void)
 	int j;
 	int k;
 	int r;
-
+	
 	for (i = 0; i < 1000; i++)
 	{
 		j = i / 100;
 		k = (i / 10) % 10;
 		r = i % 10;
 
-		if (j < k && k < 1)
+		if (j < k && k < r)
 		{
 			putchar(j + '0');
 			putchar(k + '0');

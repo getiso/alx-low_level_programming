@@ -8,17 +8,16 @@
  */
 int main(void)
 {
-	int x = 0;
+	int x;
 	int y;
 	int z;
 	int r;
 
-	while (x < 1000)
+	for (x = 0; x < 1000; x++)
 	{
 		y = x / 100;
-		z = (x / 100) % 10;
+		z = (x / 10) % 10;
 		r = x % 10;
-		x++;
 
 		if (y < z && z < 1)
 		{

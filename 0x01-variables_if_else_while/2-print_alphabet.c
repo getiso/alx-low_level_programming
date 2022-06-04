@@ -5,7 +5,7 @@
 /*
  * main - main block
  *Description: Use 'putchar' function to print the alphabet lowercase.
- * Return: Always 0 (Success)
+ * Return: 0
  */
 
 int main(void)

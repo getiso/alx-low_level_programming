@@ -8,24 +8,24 @@
  */
 int main(void)
 {
-	int x;
-	int y;
-	int z;
+	int i;
+	int j;
+	int k;
 	int r;
 
-	for (x = 0; x < 1000; x++)
+	for (i = 0; i < 1000; i++)
 	{
-		y = x / 100;
-		z = (x / 10) % 10;
-		r = x % 10;
+		j = i / 100;
+		k = (i / 10) % 10;
+		r = i % 10;
 
-		if (y < z && z < 1)
+		if (j < k && k < 1)
 		{
-			putchar(y + 'o');
-			putchar(z + '0');
+			putchar(j + '0');
+			putchar(k + '0');
 			putchar(r + '0');
 
-			if (x < 700)
+			if (i < 700)
 			{
 				putchar(44);
 				putchar(32);

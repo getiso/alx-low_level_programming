@@ -3,8 +3,8 @@
 #include <time.h>
 
 /*
- * main - print lowercase alphabet in alphabetical order
- *alphabeic lower character
+ * main - Entry main block
+ *Description: use putchar function to print lower alphabet
  * Return: Always 0 (Success)
  */
 

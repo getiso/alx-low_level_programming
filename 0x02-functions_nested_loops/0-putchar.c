@@ -10,7 +10,7 @@ int main(void)
 
 	while (*chr)
 	{
-		_putchar("%s", *chr);
+		_putchar(*chr);
 		chr++;
 	}
 	_putchar('\n');

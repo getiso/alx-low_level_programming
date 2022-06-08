@@ -4,7 +4,7 @@
  * print_alphabet_x10 - print 10 times lowercase alphabet
  * Return: none
  */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	char chr;
 	int j;

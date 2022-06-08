@@ -2,8 +2,8 @@
 
 /**
  * _isalpha: check the character
- * @c: check c is character or not
- * Return: return 1 if c is letter or return 0 otherwise
+ * @c: check c is letter,  lowercase or uppercase
+ * Return: 1 if c is letter,  0 otherwise
  */
 int _isalpha(int c)
 {

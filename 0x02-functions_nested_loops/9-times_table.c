@@ -6,33 +6,31 @@
  */
 void times_table(void)
 {
-	int x;
-	int y;
-	int z;
+	int x; /*row*/
+	int y; /*column*/
+	int z; 
 
 	for (x = 0; x <= 9; x++)
 	{
-		for (y = 0; y <= 0; y++)
+		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
+		for (y = 1; y <= 9; y++)
 		{
 			z = x * y;
 
-			if ((z / 10) == 0)
+			if ((z / 10) > 0)
 			{
-				if (y != 0)
-					_putchar(' ');
-				_putchar(z + '0');
-
-				if (y == 9)
-					continue;
-				_putchar(',');
 				_putchar(' ');
 			}
 			else
 			{
-				_putchar((z / 10) + '0');
-				_putchar((z % 10) + '0');
-				if (y == 9)
-					continue;
+				_putchar(' ');
+			}
+			_putchar((z % 10) + '0');
+
+			if (y < 9)
+			{
 				_putchar(',');
 				_putchar(' ');
 			}

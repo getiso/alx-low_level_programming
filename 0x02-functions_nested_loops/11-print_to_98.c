@@ -3,18 +3,19 @@
 
 /**
  * print_to_98 - print all natural numbers from n to 98
+ *@x: integer to print natural numbers
  * number separated by comma, followed by a space
  * number should be printed in order
  */
-void print_to_98(int n)
+void print_to_98(int x)
 {
-	if (n <= 98)
+	if (x <= 98)
 	{
-		for (n = n; n < 98; n++)
-			printf("%d, ", n);
+		for (x = x; x < 98; x++)
+			printf("%d, ", x);
 	}
 	else
-		for (n = n; n > 98; n--)
-			printf("%d, ", n);
+		for (x = x; x > 98; x--)
+			printf("%d, ", x);
 	printf("98\n");
 }

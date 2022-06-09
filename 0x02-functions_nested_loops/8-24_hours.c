@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * jack_bauer - write a function that prints every minute of the day 
+ * jack_bauer - write a function that prints every minute of the day
  * Return: Always o (Success)
  */
 void jack_bauer(void)
 {
-	int x; 
+	int x;
 	int y;
 
 	x = 0;

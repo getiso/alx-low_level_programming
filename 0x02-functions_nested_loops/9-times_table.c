@@ -8,7 +8,7 @@ void times_table(void)
 {
 	int x; /*row*/
 	int y; /*column*/
-	int z; 
+	int z;
 
 	for (x = 0; x <= 9; x++)
 	{
@@ -21,7 +21,7 @@ void times_table(void)
 
 			if ((z / 10) > 0)
 			{
-				_putchar(' ');
+				_putchar((z / 10) + '0');
 			}
 			else
 			{

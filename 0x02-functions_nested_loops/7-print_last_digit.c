@@ -2,21 +2,22 @@
 
 /**
  * print_last_digit - write a function that prints the last digit of a number
- * Return: the value of the last digit
+ * @x: int to prints the last digit
+ * Return: last digit value
  */
-int print_last_digit(int j)
+int print_last_digit(int x)
 {
-	int i;
+	int y;
 
-	if (j < 0)
-		j = -j;
+	if (x < 0)
+		x = -x;
 
-	i = j % 10;
+	y = x % 10;
 
-	if (i < 0)
-		i = -i;
+	if (y < 0)
+		y = -y;
 
-	_putchar(i + '0');
+	_putchar(y + '0');
 
-	return (a);
+	return (y);
 }

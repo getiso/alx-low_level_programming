@@ -3,12 +3,14 @@
 
 /**
  * _abs - write a function that computes the absolute value of an integer.
+ * @x: check integer 
+ * Return: absolute valule of the integer
  */
-int _abs(int a)
+int _abs(int x)
 {
-	if (a >= 0)
+	if (x >= 0)
 	{
-		return (a);
+		return (x);
 	}
-	return (-a);
+	return (-x);
 }

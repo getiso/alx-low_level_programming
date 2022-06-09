@@ -11,9 +11,21 @@ int main(void)
 	long int z;
 	long int next_term;
 
-	x = 1;
-	y = 2;
+	y = 1;
+	z = 2;
 
-	for (z = 1; z <= 50; ++z)
+	for (x = 1; x <= 50; ++x)
 	{
-
+		if (y != 20365011074)
+		{
+			printf("%ld, ", y);
+		} else 
+		{
+			printf("%ld\n", y);
+		}
+		next_term = y + z;
+		y = z;
+		z = next_term;
+	}
+	return (0);
+}

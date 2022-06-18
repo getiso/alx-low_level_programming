@@ -3,7 +3,7 @@
 /**
  * _strnpy - copies n bytes of src to dest string
  * @dest: string to copy
- * #src: string to be copied
+ * @src: string to be copied
  * @n: most bytes to copy
  *
  * Return: dest address

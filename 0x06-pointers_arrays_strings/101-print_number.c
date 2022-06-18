@@ -47,20 +47,20 @@ void print_number(int n)
 	if (y0 != 0)
 		_putchar('0' + x0);
 	if (y1 != 0)
-                _putchar('0' + x1);
+		_putchar('0' + x1);
 	if (y2 != 0)
-                _putchar('0' + x2);
+		_putchar('0' + x2);
 	if (y3 != 0)
-                _putchar('0' + x3);
+		_putchar('0' + x3);
 	if (y4 != 0)
-                _putchar('0' + x4);
+		_putchar('0' + x4);
 	if (y5 != 0)
-                _putchar('0' + x5);
+		_putchar('0' + x5);
 	if (y6 != 0)
-                _putchar('0' + x6);
+		_putchar('0' + x6);
 	if (y7 != 0)
-                _putchar('0' + x7);
+		_putchar('0' + x7);
 	if (y8 != 0)
-                _putchar('0' + x8);
+		_putchar('0' + x8);
 	_putchar('0' + x9);
 }

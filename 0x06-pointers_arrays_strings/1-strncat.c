@@ -7,13 +7,11 @@
  * @n: most bytes from src
  * Return: dest address
  */
-char *_strncar(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	int x;
-	int y;
+	int x, y;
 
-	x = 0;
-	y =0;
+	x = y = 0;
 	while (*(dest + x))
 		x++;
 	while (y < n && *(src + y))

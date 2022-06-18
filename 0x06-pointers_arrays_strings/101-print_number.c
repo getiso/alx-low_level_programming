@@ -44,5 +44,5 @@ void print_number(int n)
                 _putchar('0' + x7);
 	if (y8 != 0)
                 _putchar('0' + x8);
-	_putchar('0' + x9)
+	_putchar('0' + x9);
 }

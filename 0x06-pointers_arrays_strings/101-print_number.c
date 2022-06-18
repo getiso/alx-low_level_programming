@@ -12,7 +12,7 @@ void print_number(int n)
 	int y0, y1, y2;
 
 	x0 = n / 1000;
-	y0 = y0;
+	y0 = x0;
 	x1 = (n / 1000) % 10;
 	y1 = y0 + x1;
 	x2 = (n / 100) % 10;

@@ -3,7 +3,7 @@
 
 /**
  * main - entry point
- * Description: prints the numbers 1 up to 100
+ * Description: prints the numbers 1 - 100
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -21,7 +21,7 @@ int main(void)
 		else
 			printf("%i", i);
 		if (i < 100)
-			printf("  ");
+			printf(" ");
 	}
 	printf("\n");
 	return (0);

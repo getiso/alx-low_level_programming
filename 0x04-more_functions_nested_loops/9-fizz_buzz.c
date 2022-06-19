@@ -8,19 +8,19 @@
  */
 int main(void)
 {
-	int x;
+	int i;
 
-	for (x = 0; x <= 100; x++)
+	for (i = 0; i <= 100; i++)
 	{
-		if (x % 15 == 0)
+		if (i % 15 == 0)
 			printf("FizzBuzz");
-		else if (x % 3 == 0)
+		else if (i % 3 == 0)
 			printf("Fizz");
-		else if (x % 5 == 0)
+		else if (i % 5 == 0)
 			printf("Buzz");
 		else
-			printf("%x", x);
-		if (x < 100)
+			printf("%i", i);
+		if (i < 100)
 			printf("  ");
 	}
 	printf("\n");

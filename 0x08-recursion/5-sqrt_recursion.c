@@ -6,7 +6,7 @@
  * @c: find sqrt of
  * Return: sqrt of c or -1
  */
-int square_check(int a, c)
+int square_check(int a, int c)
 {
 	if (a * a == c)
 		return (a);

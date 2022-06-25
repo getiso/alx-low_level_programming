@@ -25,13 +25,13 @@ int is_number(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int a = 0, x;
+	int a = 0, x = 1;
 	long y = 0;
 
 	while (x < argc && a == 0)
 	{
 		if (is_number(argv[x]))
-			y += atoi(argv[x++]);
+			y += atol(argv[x++]);
 		else
 			a = 1;
 	}

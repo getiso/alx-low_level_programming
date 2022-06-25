@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	for (x = 1; x < argc; x++)
 	{
-		for (y = 0; argv[x][y]; y++)
+		for (y = 0; y < argv[x][y]; y++)
 		{
 			if (isdigit(argv[x][y] == 0))
 			{

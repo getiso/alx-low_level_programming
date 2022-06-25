@@ -3,6 +3,21 @@
 #include <ctype.h>
 
 /**
+ * is_number - test the string is number
+ * @s: string to check
+ * Return: 1 if s is number or 0 else
+ */
+int is_number(char *s)
+{
+	if (s[0] == '\0')
+		return (1);
+	if (!isdigit(s[0]))
+		return (0);
+	else
+		return (is_number(s + 1));
+	return (1);
+}
+/**
  * main - add positive numbers
  * @argc: number of arguments
  * @argv: argument vector of pointer
@@ -10,23 +25,19 @@
  */
 int main(int argc, char *argv[])
 {
-	int a = 0, x, y;
+	int a = 0, x;
+	long y = 0;
 
-	for (x = 1; x < argc; x++)
+	while (x < argc && a == 0)
 	{
-		for (y = 0; y <= argv[x][y]; y++)
-		{
-			if (isdigit(argv[x][y] == 0))
-			{
-				puts("Error");
-				return (1);
-			}
-		}
+		if (is_number(argv[x]))
+			y += atoi(argv[x++]);
+		else
+			a = 1;
 	}
-	for (x = 1; x < argc; x++)
-	{
-		a += atoi(argv[x]);
-	}
-	printf("%d\n", a);
-	return (0);
+	if (a)
+		printf("Error\n");
+	else
+		printf("%ld\n", s);
+	return (a);
 }

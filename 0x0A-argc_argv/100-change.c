@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	int a, n = 0, x, y;
 	int ch[5] = {25, 10, 5, 2, 1};
 
-	fi (argc != 2)
+	if (argc != 2)
 	{
 		puts("Error");
 		return (1);
@@ -36,4 +36,4 @@ int main(int argc, char *argv[])
 	}
 	printf("%d\n", n);
 	return (0);
-}
+O[O}

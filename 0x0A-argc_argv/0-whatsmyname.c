@@ -3,7 +3,7 @@
 /**
  * main - prints its name
  * @argc: number of arguments passed
- * @argc: arguments vector of pointer to string
+ * @argv: arguments vector of pointer to string
  * Return: Always 0 (Success)
  */
 int main(int argc __attribute__((unused)), char *argv[])

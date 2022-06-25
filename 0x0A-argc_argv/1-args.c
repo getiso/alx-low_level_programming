@@ -3,7 +3,7 @@
 /**
  * main - prints the number of arguments
  * @argc: number of arguments passed
- * @argv: argument vectory 
+ * @argv: argument vectory
  * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[] __attribute__((unused)))

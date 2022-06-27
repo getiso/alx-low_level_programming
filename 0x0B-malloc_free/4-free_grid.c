@@ -5,7 +5,7 @@
 /**
  * free_grid - frees 2 dimensional grid previously created
  * by alloc_gric function
- * @grid: matrix of double pointer 
+ * @grid: matrix of double pointer
  * @height: rows
  * Return: void
  */

@@ -3,7 +3,7 @@
 
 /**
  * argstostr - concatenates all the arguments
- * @ac: argument count 
+ * @ac: argument count
  * @av: argument passed
  * Return: pointer
  */

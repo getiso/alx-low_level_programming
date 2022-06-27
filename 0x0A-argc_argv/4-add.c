@@ -25,19 +25,19 @@ int is_number(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int a = 0, x = 1;
-	long y = 0;
+	int e = 0, x = 1;
+	long s = 0;
 
-	while (x < argc && a == 0)
+	while (x < argc && e == 0)
 	{
 		if (is_number(argv[x]))
-			y += atol(argv[x++]);
+			s += atol(argv[x++]);
 		else
-			a = 1;
+			e = 1;
 	}
-	if (a)
+	if (e)
 		printf("Error\n");
 	else
 		printf("%ld\n", s);
-	return (a);
+	return (e);
 }

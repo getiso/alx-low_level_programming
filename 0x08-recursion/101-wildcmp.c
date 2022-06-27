@@ -2,11 +2,22 @@
 
 /**
  * wildcmp - compare two strings
- * @s1: first string to check
- * @s2: second string to check
- * Return: 1 if s1 and s2 match or 0 otherwise
+ * @s1: first string to compare
+ * @s2: second string to compare
+ * @Return: 1 if match or -1 if error
  */
 int wildcmp(char *s1, char *s2)
 {
-	return (*s1 == *s2);
+	if (*s1 == '\0', && *s2 == '\0')
+		return (1);
+	if (*s1 == *s2)
+		return (wildcmp(s1 + 1, s2 + 1));
+	if (*s2 == '*')
+	{
+		if (*s2 == '*' && *(s2 + 1) != '\0' && *s1 == '\0')
+			return (0);
+		if (wildcmp(s1, s2 + 1) || wildcmp(s1 + 1, s2))
+			return (1);
+	}
+	return (0);
 }

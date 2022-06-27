@@ -17,7 +17,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 		s1 = nul;
-	fi (s2 == NULL)
+	if (s2 == NULL)
 		s2 = nul;
 	x1 = 0, x2 = 0;
 	while (*(s1 + x1))
@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 		return (0);
 	for (x = 0; x < x1; x++)
 		*(s + x) = *(s1 + x);
-	for (x = 0, j = x1; x <= x2; y++, x++)
+	for (x = 0, y = x1; x <= x2; y++, x++)
 		*(s + y) = *(x2 + x);
 	return (s);
 }

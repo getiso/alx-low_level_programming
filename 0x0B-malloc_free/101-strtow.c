@@ -4,7 +4,7 @@
 
 /**
  * count_word - count number of words
- * @s: string
+ * @sw: string
  * Return: int
  */
 int count_word(char *sw)

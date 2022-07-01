@@ -7,7 +7,7 @@
  * @sz: size of string
  * Return: void
  */
-void print(char *str, int l)
+void _print(char *str, int l)
 {
 	int x, y;
 
@@ -84,7 +84,7 @@ int check_digit(char **av)
  * @l: length of string
  * Return: void
  */
-void inits(char *str, int l)
+void init(char *str, int l)
 {
 	int i;
 
@@ -123,7 +123,7 @@ int main(int argc, char *argv[])
 			_putchar(e[ti]);
 		exit(98);
 	}
-	inits(a, ln - 1);
+	init(a, ln - 1);
 	for (ti = l2 - 1, i = 0; ti >= 0; ti--; i++)
 	{
 		t = mul(argv[2][ti], argv[1], l1 - 1, a, (ln - 2) - i);

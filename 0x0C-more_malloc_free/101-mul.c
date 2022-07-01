@@ -7,22 +7,22 @@
  * @sz: size of string
  * Return: void
  */
-void print(char *s, int sz)
+void print(char *str, int l)
 {
 	int x, y;
 
 	x = 0;
 	y = 0;
-	while (x < sz)
+	while (x < l)
 	{
-		if (s[x] != '0')
+		if (str[x] != '0')
 			y = 1;
-		if (y || x == sz -1)
+		if (y || x == l -1)
 			_putchar(s[x]);
 		x++;
 	}
 	_putchar('\n');
-	free(s);
+	free(str);
 }
 /**
  * mul - multiplies a char with a string
@@ -30,6 +30,7 @@ void print(char *s, int sz)
  * @num: string to multiply
  * @num_index: last non NULL index
  * @dest: destination of multiplication
+ * @dest_index: highest index
  * Return: pointer to dest or NULL
  */
 char *mul(char n, char *num, int num_index, char *dest, int dest_index)
@@ -66,6 +67,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 int check_digit(char **av)
 {
 	int i, j;
+
 	for (i = 1; i < 3; i++)
 	{
 		for (j = 0; av[i][j]; j++)
@@ -77,18 +79,18 @@ int check_digit(char **av)
 	return (0);
 }
 /**
- * inits - initialize string
- * @s: string to initialize
- * @sz: length of string
+ * init - initialize string
+ * @str: string to initialize
+ * @l: length of string
  * Return: void
  */
-void inits(char *s, int sz)
+void inits(char *str, int l)
 {
 	int i;
 
-	for (i = 0; i < sz; i++)
+	for (i = 0; i < l; i++)
 		s[i] = '0';
-	s[i] = '\0';
+	str[i] = '\0';
 }
 /**
  * main - multiply two numbers
@@ -133,6 +135,6 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 	}
-	_putchar(a, ln - 1);
+	_print(a, ln - 1);
 	return (0);
 }

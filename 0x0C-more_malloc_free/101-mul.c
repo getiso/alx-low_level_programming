@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _print - moves a string 
+ * _print - moves a string
  * @str: string to move
  * @l: size of string
  * Return: void

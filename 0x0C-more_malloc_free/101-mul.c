@@ -62,7 +62,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 /**
  * check_digit - checks arguments to digit
  * @av: pointer to arguments
- * Return: 0 for digits, 1 if not digit
+ * Return: 0 for digits or 1 if not digit
  */
 int check_digit(char **av)
 {

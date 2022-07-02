@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * print - moves a string 
- * @s: string to move
- * @sz: size of string
+ * _print - moves a string 
+ * @str: string to move
+ * @l: size of string
  * Return: void
  */
 void _print(char *str, int l)
@@ -17,8 +17,8 @@ void _print(char *str, int l)
 	{
 		if (str[x] != '0')
 			y = 1;
-		if (y || x == l -1)
-			_putchar(s[x]);
+		if (y || x == l - 1)
+			_putchar(str[x]);
 		x++;
 	}
 	_putchar('\n');
@@ -35,23 +35,23 @@ void _print(char *str, int l)
  */
 char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 {
-	int j, k, mul, mulrem, add, addrem;
+	int y, z, mul, mulrem, add, addrem;
 
 	mulrem = 0;
 	addrem = 0;
-	for (j = num_index, k = dest_index; j >= 0; j--, k--)
+	for (y = num_index, z = dest_index; y >= 0; y--, z--)
 	{
-		mul = (n - '0') * (num[j] - '0') + mulrem;
+		mul = (n - '0') * (num[y] - '0') + mulrem;
 		mulrem = mul / 10;
-		add = (dest[k] - '0') + (mul % 10) + addrem;
+		add = (dest[z] - '0') + (mul % 10) + addrem;
 		addrem = add /10;
-		dest[k] = add % 10 + '0';
+		dest[z] = add % 10 + '0';
 	}
-	for (addrem += mulrem; k >= 0 && addrem; k--)
+	for (addrem += mulrem; z >= 0 && addrem; z--)
 	{
-		add = (dest[k] - '0') + addrem;
+		add = (dest[z] - '0') + addrem;
 		addrem = add / 10;
-		dest[k] = add % 10 + '0';
+		dest[z] = add % 10 + '0';
 	}
 	if (addrem)
 	{
@@ -66,13 +66,13 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
  */
 int check_digit(char **av)
 {
-	int i, j;
+	int x, y;
 
-	for (i = 1; i < 3; i++)
+	for (x = 1; x < 3; x++)
 	{
-		for (j = 0; av[i][j]; j++)
+		for (y = 0; av[x][y]; y++)
 		{
-			if (av[i][j] < '0' || av[i][j] > '9')
+			if (av[x][y] < '0' || av[x][y] > '9')
 				return (1);
 		}
 	}
@@ -86,11 +86,11 @@ int check_digit(char **av)
  */
 void init(char *str, int l)
 {
-	int i;
+	int x;
 
-	for (i = 0; i < l; i++)
-		s[i] = '0';
-	str[i] = '\0';
+	for (x = 0; x < l; x++)
+		str[x] = '0';
+	str[x] = '\0';
 }
 /**
  * main - multiply two numbers
